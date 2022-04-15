@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "activity": "Reading",
+      "rating": 3,
+      "imageURL" : "https://fthmb.tqn.com/GEvoBd-EY4F3wWF4KtH4JH9a2t8=/2122x1415/filters:fill(auto,1)/456590487-56a2aee05f9b58b7d0cd5f79.jpg"
+    },
+    {
+      "id": 2,
+      "activity": "Taking a shower/bath",
+      "rating": 4,
+      "imageURL" : "https://media.istockphoto.com/photos/young-pretty-woman-taking-shower-and-relaxing-in-outdoor-bath-picture-id935970896?k=6&m=935970896&s=170667a&w=0&h=TS9p1eTxcr_hFW527DuEOv3L1bf2XjPN5crL9UQk4m0="
+    },
+    {
+      "id": 3,
+      "activity": "Playing your favorite game",
+      "rating": 3,
+      "imageURL" : "https://ncube-digest.com/wp-content/uploads/2019/05/Videogamesandteamwork.jpg"
+    }
+  ]
