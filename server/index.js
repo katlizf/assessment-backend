@@ -31,11 +31,12 @@ app.get('/api/fortune', (req, res) => {
   res.status(200).send(randomFortune)
 })
 
+
 const {getActivities, createActivity, deleteActivity, updateActivity} = require('./controller')
 
 app.get('/api/activities', getActivities)
 app.post('/api/activities', createActivity)
 app.put('/api/activities/:id', updateActivity)
-app.delete('/api.activities/:id', deleteActivity)
+app.delete('/api/activities/:id', deleteActivity)
 
 app.listen(4000, () => console.log("Server running on 4000"));

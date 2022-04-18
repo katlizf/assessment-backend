@@ -25,7 +25,7 @@ function submitHandler(e) {
         imageURL: imageURL.value
     }
 
-    createMovie(bodyObj)
+    createActivity(bodyObj)
     title.value = ''
     rating.checked = false
     imageURL.value = ''
@@ -36,15 +36,18 @@ function createActivityCard(activity) {
     activityCard.classList.add('activity-card')
     
     activityCard.innerHTML = `<img alt='activity in action' src=${activity.imageURL}
-    class="activity-title"/>
+    class="activity-cover"/>
     <p class="activity-title">${activity.title}</p>
     <div class="btns-container">
-    <button onclick="updateActivity(${activity.id}, 'minus)">-</button>
-    <p class="activity-rating">${activity.rating} stars</p>
-    <button onclick="updateActivity(${activity.id}, 'plus')">+</button>`
-
+        <button onclick="updateActivity(${activity.id}, 'minus')">-</button>
+        <p class="activity-rating">${activity.rating} stars</p>
+        <button onclick="updateActivity(${activity.id}, 'plus')">+</button>
+        </div>
+        <button onclick="deleteActivity(${activity.id})">delete</button>`
+        
     activitiesContainer.appendChild(activityCard)
 }
+
 
 function displayActivities(arr) {
     activitiesContainer.innerHTML = ''

@@ -13,7 +13,7 @@ module.exports = {
     },
 
     createActivity: (req, res) => {
-        const {id, title, rating, imageURL} = req.body;
+        const {title, rating, imageURL} = req.body;
         let newActivity = {
             id: id,
             title,
@@ -35,10 +35,10 @@ module.exports = {
        } else if (activities[index].rating === 0 && type === 'minus') {
            res.status(400).send('Cannot go below 0')
        } else if (type === 'minus') {
-            activities[index].rating--
+            activities[index].rating--;
             res.status(200).send(activities)
         } else if (type === 'plus') {
-            activities[index].rating++
+            activities[index].rating++;
             res.status(200).send(activities)
         } else {
             res.status(400).send('Something went wrong...')

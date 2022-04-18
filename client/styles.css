@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #232323;
+    background-color: rgb(93, 93, 159);
 }
 
 header {
@@ -13,18 +13,18 @@ header {
     display: flex; 
     justify-content: center; 
     align-items: center;
-    color: blanchedalmond;
+    color: rgb(232, 225, 214);
 }
 
 main {
     display: flex; 
-    justify-content: center;
+    justify-content: center
 }
 
 form {
     width: 350px;
     height: 350px;
-    background-color: blanchedalmond;
+    background-color: rgb(232, 225, 214);
     position: relative;
     display: flex; 
     flex-direction: column;
@@ -34,10 +34,10 @@ form {
 }
 
 button {
-    background-color: #232323;
+    background-color: grey;
     width: 75px;
-    height: 25px;
-    color: blanchedalmond;
+    height: 40px;
+    color: rgb(232, 225, 214);
     border: none;
     margin: 5px;
 }
@@ -48,7 +48,7 @@ input[type='text'] {
     border: none;
     border-bottom: 2px solid #232323;
     color: #232323;
-    background-color: blanchedalmond;
+    background-color: rgb(232, 225, 214);
 }
 
 #ratings-container {
@@ -62,7 +62,7 @@ input[type='text'] {
     align-items: center;
 }
 
-#activity-container {
+#activities-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -70,15 +70,15 @@ input[type='text'] {
 }
 
 .activity-cover {
-    width: 200px; 
+    width: 500px; 
     height: 300px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 
 .activity-card {
-    background-color: blanchedalmond;
-    width: 200px;
+    background-color: rgb(232, 225, 214);
+    width: 500px;
     margin: 20px; 
     display: flex;
     flex-direction: column;
@@ -106,10 +106,6 @@ input[type='text'] {
 }
 
 .btns-container > button {
-    width: 20px;
+    width: 30px;
 }
 
-input[id="img"] {
-    width: 10px;
-    height: 5px
-}
